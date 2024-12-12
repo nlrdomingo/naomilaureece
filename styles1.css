@@ -1,0 +1,228 @@
+body {
+    background-color: #FDF6E3; /* Background color from your design */
+    font-family: 'Roca', sans-serif;
+    margin-top: 15px;
+    margin-left: 56px;
+    margin-right: 56px;
+    color: #215732; /* White text */
+    overflow-x: hidden;
+  }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    background-color: #FDF6E3; /* Matches the design background */
+    position: relative;
+  }
+
+.logo {
+  font-family: "Roca", serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #215732; /* Green from the design */
+}
+
+.navbar ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: "Fredoka", sans-serif;
+  font-size: 16px;
+  color: #215732;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.navbar a.active,
+.navbar a:hover {
+  background-color: #ffc000; /* Yellow background */
+  color: #215732; /* White text */
+  outline: 1px solid #215732; /* Green stroke */
+}
+
+.tagline {
+    font-size: 128px;
+    color: #215732; /* White text */
+}
+
+.connectform {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+    gap: 30px;
+}
+
+.connectform .name {
+    grid-row: 1;
+    grid-column: 1;
+    border-bottom: 0.1rem solid;
+}
+
+.connectform .email {
+    grid-row: 1;
+    grid-column: 2;
+    border-bottom: 0.1rem solid;
+}
+
+.connectform .subject {
+    grid-row: 1;
+    grid-column: 3;
+    border-bottom: 0.1rem solid;
+}
+
+.spacer {
+    height: 50px;
+}
+
+.textbox {
+    color: #9DB4A7;
+    border: 0.1rem solid #215732;
+    grid-row: 2;
+    grid-column: 1 / 4;
+    padding: 10px;
+    height: auto;
+}
+
+.sendcontainer {
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.connectform .sendmessage {
+    font-weight: bold;
+    font-size: 24px;
+    border-bottom: 0.1rem solid;
+    width: fit-content;
+}
+
+.footer > img {
+    max-width: 30%;
+    max-height: 30%;
+}
+
+.footer {
+    position: absolute;
+}
+
+.footertagline {
+    position: relative;
+    font-size: 34px;
+    top: 30vh;
+}
+
+.bottomline {
+    position: relative;
+    top: 30vh;
+}
+
+.footerline {
+    position: relative;
+    border-bottom: 0.1rem solid;
+    top: 10vh;
+    opacity: 50%;
+}
+
+.flower1 {
+    position: relative;
+    left: 75%;
+    top: -10vh;
+}
+
+.flower2 {
+    position: relative;
+    left: 29%;
+    top: 0px;
+}
+
+.resume {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 3fr;
+}
+
+.resume img {
+    grid-column: 1;
+    max-width: 100%;
+}
+.btn1, .btn2 {
+    grid-column: 1;
+    background-color: #FFBC5F;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px;
+    margin: 10px;
+}
+
+.headings {
+    font-weight: bold;
+    font-size: 36px;
+    font-family: 'Roca', sans-serif;
+}
+
+.exppoint {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 10px 0px;
+}
+
+.exppoint .position{
+    grid-column: 1;
+    font-weight: bold;;
+}
+
+.exppoint .company{
+    grid-column: 1;
+}
+
+.exppoint .time{
+    grid-column: 2;
+    grid-row: 1;
+}
+
+.resume {
+    font-family: 'Fredoka', sans-serif;
+}
+
+.postheading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postheading >* {
+    display: inline-block;
+    align-content: center;
+
+}
+
+.middleline {
+    width: 50vw;
+    border: 0.1rem solid;
+    height: 0px;
+}
+
+.buttons {
+    display: flex;
+}
+
+.buttons >* {
+    display: inline-block;
+    max-width: fit-content;
+    border: 0.1rem solid;
+    margin: 10px;
+    padding: 0px 10px;
+    border-radius: 100px;
+    
+}
+
+.postseparator {
+    border: 0.5rem solid;
+    height: 0px;
+    margin: 50px 0px;
+}

@@ -1,0 +1,239 @@
+body {
+  background-color: #FDF6E3; /* Background color from your design */
+color: #215732;
+  font-family: 'Fredoka', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #FDF6E3; /* Matches the design background */
+  position: relative;
+}
+
+.logo {
+  font-family: 'Roca', serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #215732; /* Green from the design */
+}
+
+.navbar ul {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
+
+.navbar a {
+  text-decoration: none;
+  font-family: 'Fredoka', sans-serif;
+  font-size: 16px;
+  color: #215732;
+  padding: 8px 16px;
+  border-radius: 20px;
+    
+}
+
+.navbar a.active,
+.navbar a:hover {
+  background-color: #FFC000; /* Yellow background */
+  color: #215732; /* White text */
+  outline: 1px solid #215732; /* Green stroke */
+
+
+}
+
+
+/* General hero styling */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+  background-color: #FDF6E3; /* Matches the overall background */
+  position: relative;
+}
+
+.hero h1 {
+  font-family: 'Fredoka', sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+  color:  #215732;
+  margin-bottom: 20px;
+}
+
+.hero h1 b i {
+  color: #215732;
+  font-family: 'Roca', serif;
+  font-weight: bold;
+}
+
+.hero h2 {
+  font-family: 'Roca', serif;
+  font-size: 150px;
+  color: #215732;
+  line-height: 1;
+  margin: 0;
+}
+
+.hero h2:nth-child(3) {
+  margin-top: -30px;
+}
+
+.flower-left {
+  position: absolute;
+  top: 50%; /* Adjust to move closer to the text */
+  transform: translateY(-120%);
+  width: 200px; /* Increase the image size */
+  height: auto;
+}
+
+.flower-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-10%);
+  width: 200px; /* Size of the flower */
+  height: auto;
+}
+
+.flower-left {
+  left: 20%; /* Bring closer to the text */
+}
+
+.flower-right {
+  right: 18%; /* Bring closer to the text */
+}
+
+/* Button container */
+.button-container {
+  margin-top: 50px; /* Reduce space between the text and the button */
+}
+
+.hero-btn {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 16px;
+  color: #215732;
+  background-color: transparent;
+  border: 1px solid #215732;
+  border-radius: 25px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.hero-btn:hover {
+background-color: #FFC000;
+  color:#215732;
+  border: 1px solid #215732;
+  
+}
+
+
+
+/* General styling for the crafts section */
+.crafts-section {
+  display: flex;
+  flex-wrap: wrap; /* Allows projects to wrap to the next row */
+  gap: 20px; /* Space between project containers */
+  justify-content: center; /* Center the projects */
+  padding: 2rem;
+  background-color: #FDF6E3; /* Matches design */
+}
+
+
+.design-values {
+  background-color: #FDF6E3; /* Light beige background */
+  padding: 8rem 2rem; /* Space around the section */
+}
+
+.values-container {
+  max-width: 1200px; /* Matches the width of the rest of the site */
+  margin: 0 auto; /* Centers the container horizontally */
+  display: flex;
+  justify-content: space-between; /* Space between the text columns */
+  align-items: flex-start; /* Aligns content at the top */
+  gap: 2rem; /* Adds spacing between the two sections */
+}
+
+.values-text h2 {
+  font-family: 'Roca', serif;
+  font-size: 4rem;
+  color: #215732; /* Green text */
+  text-align: center; /* Center-aligns the header text only */
+  margin-bottom: 3rem; /* Adds space below the header */
+}
+
+.value-qualities {
+  flex: 1; /* Allows this section to grow equally */
+}
+
+.value-qualities p {
+  font-family: 'Roca', serif;
+  font-size: 3rem;
+  font-weight: 300;
+  color: #215732;
+  line-height: 4rem; /* Spacing between lines */
+}
+
+.values-description {
+  flex: 1; /* Allows this section to grow equally */
+}
+
+.values-description p {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #215732;
+  line-height: 1.8rem; /* Improved readability */
+  max-width: 500px; /* Restricts the description width */
+  text-align: justify; /* Justifies the text alignment */
+
+}
+.crafts-section {
+  padding: 3rem 2rem; /* Add padding around the section */
+  background-color: #FDF6E3; /* Light beige background */
+  text-align: center; /* Center-align the section header */
+}
+
+.craft-card {
+  background-color: #FFFFFF; /* White background for the card */
+  border-radius: 16px; /* Rounded corners */
+  overflow: hidden;
+  width: 100%; /* Take full width of the container */
+  max-width: 1200px; /* Match the max width of other sections */
+  margin: 2rem auto; /* Center the card within the section */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.craft-content {
+  width: 100%; /* Full width of the card */
+  height: auto;
+  overflow: hidden;
+}
+
+.craft-content img {
+  width: 100%; /* Ensure the image stretches to fit the card */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.craft-description {
+  padding: 1rem; /* Padding inside the description box */
+  text-align: left; /* Align text to the left */
+  background: linear-gradient(to bottom, #FFF5EB, #F7D6E3); /* Gradient background */
+  border-radius: 8px; /* Rounded corners for the description box */
+}
+
+.craft-description h3 {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #215732; /* Green color */
+  margin-bottom: 0.5rem;
+}
+
+.craft-description p {
+  font-family: 'Fredoka', sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  color: #9C6266; /* Subtle red */
+}
